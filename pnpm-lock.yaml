@@ -4,6 +4,7 @@ specifiers:
   '@aws-sdk/client-iam': ^3.121.0
   '@babel/runtime': ^7.17.2
   '@playwright/test': ^1.22.2
+  '@rollup/plugin-replace': ^4.0.0
   '@skyra/timestamp': ^1.0.0
   '@sveltejs/adapter-auto': next
   '@sveltejs/adapter-node': next
@@ -68,6 +69,7 @@ specifiers:
   rehype-sanitize: ^5.0.1
   rehype-stringify: ^9.0.3
   relative-time-format: ^1.1.4
+  rollup: '>=1.20.0 <2.0.0 || >=2.0.0 <3.0.0'
   rxjs: ^7.5.5
   sass: ^1.53.0
   secure-random: ^1.1.2
@@ -90,6 +92,9 @@ specifiers:
   unified: ^10.1.2
   vite: ^3.0.0
   vite-plugin-pwa: ^0.12.3
+  workbox-core: ^6.5.3
+  workbox-precaching: ^6.5.3
+  workbox-routing: ^6.5.3
   wysiwyg-editor-node-sdk: ^4.0.12
   youtube-player: ^5.5.2
 
@@ -143,6 +148,7 @@ dependencies:
   rehype-sanitize: 5.0.1
   rehype-stringify: 9.0.3
   relative-time-format: 1.1.4
+  rollup: 2.75.7
   rxjs: 7.5.5
   sass: 1.53.0
   secure-random: 1.1.2
@@ -159,6 +165,7 @@ dependencies:
 
 devDependencies:
   '@playwright/test': 1.23.0
+  '@rollup/plugin-replace': 4.0.0_rollup@2.75.7
   '@sveltejs/adapter-auto': 1.0.0-next.64
   '@types/cheerio': 0.22.31
   '@types/js-cookie': 3.0.2
@@ -187,6 +194,9 @@ devDependencies:
   typescript: 4.7.4
   vite: 3.0.0_sass@1.53.0
   vite-plugin-pwa: 0.12.3_vite@3.0.0
+  workbox-core: 6.5.4
+  workbox-precaching: 6.5.4
+  workbox-routing: 6.5.4
 
 packages:
 
@@ -2423,6 +2433,16 @@ packages:
 
   /@rollup/plugin-replace/2.4.2_rollup@2.75.7:
     resolution: {integrity: sha512-IGcu+cydlUMZ5En85jxHH4qj2hta/11BHq95iHEyb2sbgiN0eCdzvUcHw5gt9pBL5lTi4JDYJ1acCoMGpTvEZg==}
+    peerDependencies:
+      rollup: ^1.20.0 || ^2.0.0
+    dependencies:
+      '@rollup/pluginutils': 3.1.0_rollup@2.75.7
+      magic-string: 0.25.9
+      rollup: 2.75.7
+    dev: true
+
+  /@rollup/plugin-replace/4.0.0_rollup@2.75.7:
+    resolution: {integrity: sha512-+rumQFiaNac9y64OHtkHGmdjm7us9bo1PlbgQfdihQtuNxzjpaB064HbRnewUOggLQxVCCyINfStkgmBeQpv1g==}
     peerDependencies:
       rollup: ^1.20.0 || ^2.0.0
     dependencies:
