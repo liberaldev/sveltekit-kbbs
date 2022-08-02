@@ -14,6 +14,10 @@ const config = {
       out: './build',
     }),
   },
+
+  serviceWorker: {
+    register: false
+  },
 };
 
 export default config;
