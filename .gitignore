@@ -10,6 +10,7 @@ node_modules
 ecosystem.config.cjs
 
 .idea/
+.vscode/
 
 .pnpm-debug.log
 
