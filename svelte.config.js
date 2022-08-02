@@ -12,7 +12,10 @@ const config = {
   kit: {
     adapter: adapter({
       out: './build',
-    })
+    }),
+    alias: {
+      'static-folder': 'static'
+    }
   },
 
   serviceWorker: {
