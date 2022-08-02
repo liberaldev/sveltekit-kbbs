@@ -15,6 +15,10 @@ const config = {
     adapter: adapter({
       out: './build',
     }),
+
+    vite: {
+      plugins: [VitePWA(pwaConfiguration)]
+    }
   },
 
   serviceWorker: {
