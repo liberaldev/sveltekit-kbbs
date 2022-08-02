@@ -6,7 +6,7 @@
 		"build": "vite build",
 		"start": "node run.js",
 		"package": "svelte-kit package",
-		"preview": "svelte-kit preview --port 60001",
+		"preview": "vite preview --port 60001",
 		"prepare": "svelte-kit sync",
 		"test": "playwright test",
 		"check": "svelte-check --tsconfig ./tsconfig.json",
